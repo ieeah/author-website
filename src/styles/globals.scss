@@ -1,0 +1,18 @@
+@import '@/styles/vars.scss';
+@import '@/styles/utilities.scss';
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#app {
+	height: 100vh;
+	width: 100vw;
+}
+
+
+// typography

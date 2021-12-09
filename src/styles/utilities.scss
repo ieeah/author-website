@@ -1,0 +1,32 @@
+@import '@/styles/vars.scss';
+
+// utilities
+	// containers
+.container {
+	margin: auto;
+	
+}
+	// btns
+.btn {
+	border-radius: 8px;
+	padding: 18px 25px;
+	text-align: center;
+	text-transform: capitalize;
+	color: $clear-color;
+}
+
+.btn.third {
+	background-color: $third-color;
+}
+
+.btn.accent {
+	background-color: $accent;
+}
+
+
+// mixins
+@mixin full100 {
+	width: 100%;
+	height: 100%;
+}
+
