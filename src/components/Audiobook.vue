@@ -13,7 +13,7 @@
 				<img :src="require('@/assets/audiobookHero/audible-app-2x-600x628.png')" alt="">
 				<div class="audiobook_banner_text">
 					<h2>New Audiobook</h2>
-					<h5 class="accent_subtitle">no time to read? no problem. listen to it</h5>
+					<h5 class="accent subtitle">no time to read? no problem. listen to it</h5>
 					<p class="subheading">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque doloremque ullam blanditiis at labore!</p>
 					<div class="audiobook_banner_platforms">
 						<img :src="require('@/assets/audiobookHero/audible-logo.png')" alt="">
@@ -48,26 +48,35 @@ export default {
 		background-image: url('../assets/audiobookHero/banner.jpg');
 		background-size: cover;
 		background-position: center;
+		background-repeat: no-repeat;
 		.container.sm {
 			@include flexAlignCenter;
 			padding-top: 70px;
-			img,
+			img {
+				width: 45%;
+			}
 			.audiobook_banner_text {
-				width: 50%;
+				width: 53%;
+				margin-left: 2%;
 			}
 			.audiobook_banner_text {
 				text-align: center;
-				padding: 50px;
+				padding: 40px;
 				h2 {
 					font-size: 3rem;
 				}
 				h5 {
-					font-size: 1.2rem;
+					font-size: 1rem;
+					margin-bottom: 40px;
+				}
+				p {
+					width: 85%;
+					margin-inline: auto;
+					margin-bottom: 40px;
 				}
 				.audiobook_banner_platforms {
 					@include flexAlignCenter;
 					justify-content: space-around;
-					margin-top: 20px;
 					img {
 						width: 130px;
 					}

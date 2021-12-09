@@ -9,13 +9,13 @@
 		width: 60%;
 	}
 	.container.md {
-		width: 70%;
+		width: 75%;
 	}
 
 	// btns
 	.btn {
 		border-radius: 8px;
-		padding: 10px 25px;
+		padding: 15px 25px;
 		text-align: center;
 		text-transform: capitalize;
 		color: $clear-color;
@@ -24,17 +24,21 @@
 		font-size: .8em;
 		cursor: pointer;
 		transition: all .1s ease-in;
+		font-weight: 500;
 	}
 
-	.btn.third {
+	.btn.third_bg {
 		background-color: $third-color;
 		&:hover {
 			background-color: $third-hover;
 		}
 	}
 
-	.btn.accent {
+	.btn.accent_bg {
 		background-color: $accent;
+		&:hover {
+			background-color: $accent-hover;
+		}
 	}
 
 	// typography
@@ -50,25 +54,30 @@
 		font-family: $sans-serif;
 	}
 
+	.accent {
+		color: $accent;
+	}
+	.third {
+		color: $third-color;
+	}
+	.clear {
+		color: $clear-color;
+	}
+	.primary {
+		color: $primary-color;
+	}
 	//headings styles
-	h5.accent_subtitle,
-	h5.third_subtitle {
+
+	.subtitle {
 		text-transform: uppercase;
 		font-family: $sans-serif;
 		margin-block: 20px;
 		font-size: .9rem;
 		font-weight: 600;
+		letter-spacing: 2px;
 	}
 
-	h5.accent_subtitle {
-		color: $accent;
-	}
-
-	h5.third_subtitle {
-		color: $third-color;
-	}
-
-	p.subheading {
+	.subheading {
 		color: $secondary-clear;
 		font-family: $sans-serif;
 		margin-bottom: 20px;

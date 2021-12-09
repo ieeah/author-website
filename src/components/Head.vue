@@ -19,7 +19,7 @@
 					</ul>
 				</nav>
 				<div class="hero_text">
-					<h1 class="hand">Damon Vaughn</h1>
+					<h1 class="hand accent">Damon Vaughn</h1>
 					<h2>Best-selling author and the most influential public intellectual in the western world right now.</h2>
 					<p class="quote">- The New York times</p>
 					<div class="slide_btns">
@@ -35,32 +35,32 @@
 					<img :src="require('@/assets/img/book-widget.png')" alt="">
 					<div class="buy_txt">
 						<h4>Latest Book Release</h4>
-						<h5 class="accent_subtitle">d. vaughn autobiography</h5>
-						<p>
+						<h5 class="accent subtitle">d. vaughn autobiography</h5>
+						<p class="primary">
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quod, modi esse quos minima incidunt, quasi ad dolorem id reiciendis at?
 						</p>
 					</div>
 					<div class="cta_amz">
-						<div class="amz_btn">
-							<i class="fab fa-amazon"></i>
+						<div class="amz_btn primary">
+							<i class="fab fa-amazon primary"></i>
 							Buy On Amazon
 						</div>
-						<div class="amz_btn">
-							<i class="fab fa-apple"></i>
+						<div class="amz_btn primary">
+							<i class="fab fa-apple primary"></i>
 							Buy On AppStore
 						</div>
 					</div>
 					<div class="square_amz_btns">
 						<a href="/demos" class="square_amz">
 							<i class="fas fa-folder"></i>
-							<div class="text">Demos</div>
+							<div class="text primary">Demos</div>
 						</a>
 						<a href="/sales" class="square_amz">
 							<div class="price">
 								<sup>$</sup>
 								39
 							</div>
-							<div class="text">On Sale</div>
+							<div class="text primary">On Sale</div>
 						</a>
 					</div>
 				</div>
@@ -68,13 +68,13 @@
 		</div>
 		<section id="about">
 			<div class="container md">
-				<h2 class="hand">
+				<h2 class="hand accent">
 					More About Damon Vaughn
 				</h2>
-				<p>
+				<p class="primary">
 					Damon Vaughn is a professor of psychology at the University of Toronto, a clinical Psychologist and the author of the multi-million copy bestseller "The story of my life."
 				</p>
-				<div class="btn third">
+				<div class="btn third_bg clear">
 					Meet The Author
 				</div>
 			</div>
@@ -176,9 +176,6 @@ export default {
 		.hero_text {
 			padding-left: 240px;
 			padding-top: 80px;
-			h1 {
-				color: $accent;
-			}
 			h2 {
 				font-size: 3em;
 				width: 50%;
@@ -219,12 +216,10 @@ export default {
 			.buy_txt {
 				width: 50%;
 				h4 {
-					color: $primary-color;
 					font-family: $serif;
 					font-size: 1.6rem;
 				}
 				p {
-					color: $primary-color;
 					font-family: $sans-serif;
 					font-size: .9rem;
 				}
@@ -252,7 +247,6 @@ export default {
 				}
 				.amz_btn,
 				i {
-					color: $primary-color;
 					font-size: .9rem;
 				}
 				.amz_btn:first-of-type {
@@ -302,7 +296,6 @@ export default {
 					font-weight: bold;
 				}
 				.text {
-					color: $primary-color;
 					font-size: .8rem;
 					font-family: $sans-serif;
 					margin-top: 5px;
@@ -317,11 +310,7 @@ export default {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		h2 {
-			color: $accent; 
-		}
 		p {
-			color: $primary-color;
 			font-family: $sans-serif;
 			text-align: center;
 			font-size: 1.5rem;
