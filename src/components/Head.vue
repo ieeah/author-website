@@ -32,7 +32,7 @@
 					</div>
 				</div>
 				<div class="buy_amz">
-					<img :src="require('@/assets/download/screenshot_paint.png')" alt="">
+					<img :src="require('@/assets/img/book-widget.png')" alt="">
 					<div class="buy_txt">
 						<h4>Latest Book Release</h4>
 						<h5>d. vaughn autobiography</h5>
@@ -49,6 +49,19 @@
 							<i class="fab fa-apple"></i>
 							Buy On AppStore
 						</div>
+					</div>
+					<div class="square_amz_btns">
+						<a href="/demos" class="square_amz">
+							<i class="fas fa-folder"></i>
+							<div class="text">Demos</div>
+						</a>
+						<a href="/sales" class="square_amz">
+							<div class="price">
+								<sup>$</sup>
+								39
+							</div>
+							<div class="text">On Sale</div>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -262,6 +275,46 @@ export default {
 				}
 				i {
 					margin-right: 10px;
+				}
+			}
+		}
+		.square_amz_btns {
+			@include flexCentered;
+			flex-direction: column;
+			font-size: 1rem;
+			position: absolute;
+			right: 15px;
+			top: -50%;
+			.square_amz {
+				@include flexCentered;
+				flex-direction: column;
+				width: 60px;
+				height: 60px;
+				border-radius: 5px;
+				background-color: $clear-color;
+				margin-bottom: 5px;
+				cursor: pointer;
+				i {
+					color: #33475b;
+					font-size: 1.2rem;
+				}
+				.price {
+					font-size: 1.4rem;
+					font-family: $sans-serif;
+				}
+				.price sup {
+					font-size: .8rem;
+				}
+				.price sup,
+				.price {
+					color: $accent-2;
+					font-weight: bold;
+				}
+				.text {
+					color: $primary-color;
+					font-size: .8rem;
+					font-family: $sans-serif;
+					margin-top: 5px;
 				}
 			}
 		}
