@@ -12,7 +12,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a href="/shop">
 								<i class="fas fa-shopping-cart"></i>
 							</a>
 						</li>
@@ -28,6 +28,26 @@
 						</div>
 						<div class="arrow">
 							<i class="fas fa-arrow-right"></i>
+						</div>
+					</div>
+				</div>
+				<div class="buy_amz">
+					<img :src="require('@/assets/download/screenshot_paint.png')" alt="">
+					<div class="buy_txt">
+						<h4>Latest Book Release</h4>
+						<h5>d. vaughn autobiography</h5>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quod, modi esse quos minima incidunt, quasi ad dolorem id reiciendis at?
+						</p>
+					</div>
+					<div class="cta_amz">
+						<div class="amz_btn">
+							<i class="fab fa-amazon"></i>
+							Buy On Amazon
+						</div>
+						<div class="amz_btn">
+							<i class="fab fa-apple"></i>
+							Buy On AppStore
 						</div>
 					</div>
 				</div>
@@ -142,7 +162,7 @@ export default {
 		}
 		.hero_text {
 			padding-left: 240px;
-			padding-top: 50px;
+			padding-top: 80px;
 			h1 {
 				color: $accent;
 			}
@@ -166,6 +186,82 @@ export default {
 					&:hover {
 						background-color: rgba($color: $primary-color, $alpha: .2);
 					}
+				}
+			}
+		}
+		.buy_amz {
+			@include flexAlignCenter;
+			background-color: $clear-color;
+			flex-shrink: 0;
+			width: 36%;
+			padding: 75px;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			img {
+				height: 220px;
+				width: 50%;
+				object-fit: cover;
+			}
+			.buy_txt {
+				width: 50%;
+				h4 {
+					color: $primary-color;
+					font-family: $serif;
+					font-size: 1.6rem;
+				}
+				h5 {
+					color: $accent;
+					text-transform: uppercase;
+					font-family: $sans-serif;
+					margin-block: 20px;
+					font-size: .9rem;
+					font-weight: 600;
+				}
+				p {
+					color: $primary-color;
+					font-family: $sans-serif;
+					line-height: 1.7;
+					font-size: .9rem;
+				}
+			}
+			.cta_amz {
+				@include flexAlignCenter;
+				width: 100%;
+				height: 50px;
+				.amz_btn {
+					@include flexCentered;
+					width: 50%;
+					height: 100%;
+					border: 1px solid rgba($color: $third-color, $alpha: .5);
+					font-family: $sans-serif;
+					font-weight: bold;
+					margin-top: 30px;
+					background-color: $bg-3;
+					box-shadow: 0 3px 5px rgba($color: $accent-2, $alpha: .2);
+					cursor: pointer;
+					transition: all .15s ease-in;
+					&:hover {
+						background-color: $clear-color;
+						border-color: $accent-2-focus;
+					}
+				}
+				.amz_btn,
+				i {
+					color: $primary-color;
+					font-size: .9rem;
+				}
+				.amz_btn:first-of-type {
+					border-top-left-radius: 6px;
+					border-bottom-left-radius: 6px;
+				}
+				.amz_btn:last-of-type {
+					border-top-right-radius: 6px;
+					border-bottom-right-radius: 6px;
+					border-left: none;
+				}
+				i {
+					margin-right: 10px;
 				}
 			}
 		}

@@ -43,6 +43,7 @@
 	font-family: $hand;
 	font-size: 4em;
 	}
+
 	.quote {
 		color: $secondary-clear;
 		font-style: italic;
@@ -68,3 +69,14 @@
 	right: 0;
 }
 
+@mixin flexAlignCenter {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+@mixin flexCentered {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

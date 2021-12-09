@@ -8,9 +8,10 @@ $clear-color: white;
 
 $accent: #f3b329;
 $accent-2: #49a987;
+$accent-2-focus: #4fd59b;
 
 // typography
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Montserrat&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Montserrat:wght@400;500;600&family=Shadows+Into+Light&display=swap');
 $sans-serif: 'Montserrat', sans-serif;
 $serif: 'DM Serif Text', serif;
 $hand: 'Shadows Into Light', cursive;
@@ -18,3 +19,4 @@ $hand: 'Shadows Into Light', cursive;
 
 // backgrounds
 $bg-2: #fef7e9;
+$bg-3: #f5fcfa;
