@@ -10,7 +10,17 @@
 		</div>
 		<div class="hero">
 			<div class="container sm">
-
+				<img :src="require('@/assets/audiobookHero/audible-app-2x-600x628.png')" alt="">
+				<div class="audiobook_banner_text">
+					<h2>New Audiobook</h2>
+					<h5 class="accent_subtitle">no time to read? no problem. listen to it</h5>
+					<p class="subheading">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque doloremque ullam blanditiis at labore!</p>
+					<div class="audiobook_banner_platforms">
+						<img :src="require('@/assets/audiobookHero/audible-logo.png')" alt="">
+						<img :src="require('@/assets/audiobookHero/bn-logo-tall.png')" alt="">
+						<img :src="require('@/assets/audiobookHero/kindle-logo-tall.png')" alt="">
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -32,6 +42,37 @@ export default {
 			height: 100%;
 			@include flexAlignCenter;
 			justify-content: space-around;
+		}
+	}
+	.hero {
+		background-image: url('../assets/audiobookHero/banner.jpg');
+		background-size: cover;
+		background-position: center;
+		.container.sm {
+			@include flexAlignCenter;
+			padding-top: 70px;
+			img,
+			.audiobook_banner_text {
+				width: 50%;
+			}
+			.audiobook_banner_text {
+				text-align: center;
+				padding: 50px;
+				h2 {
+					font-size: 3rem;
+				}
+				h5 {
+					font-size: 1.2rem;
+				}
+				.audiobook_banner_platforms {
+					@include flexAlignCenter;
+					justify-content: space-around;
+					margin-top: 20px;
+					img {
+						width: 130px;
+					}
+				}
+			}
 		}
 	}
 }

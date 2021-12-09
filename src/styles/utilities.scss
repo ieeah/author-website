@@ -6,7 +6,7 @@
 		margin-inline: auto;
 	}
 	.container.sm {
-		width: 55%;
+		width: 60%;
 	}
 	.container.md {
 		width: 70%;
@@ -48,6 +48,30 @@
 		color: $secondary-clear;
 		font-style: italic;
 		font-family: $sans-serif;
+	}
+
+	//headings styles
+	h5.accent_subtitle,
+	h5.third_subtitle {
+		text-transform: uppercase;
+		font-family: $sans-serif;
+		margin-block: 20px;
+		font-size: .9rem;
+		font-weight: 600;
+	}
+
+	h5.accent_subtitle {
+		color: $accent;
+	}
+
+	h5.third_subtitle {
+		color: $third-color;
+	}
+
+	p.subheading {
+		color: $secondary-clear;
+		font-family: $sans-serif;
+		margin-bottom: 20px;
 	}
 
 

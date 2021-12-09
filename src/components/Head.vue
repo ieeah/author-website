@@ -35,7 +35,7 @@
 					<img :src="require('@/assets/img/book-widget.png')" alt="">
 					<div class="buy_txt">
 						<h4>Latest Book Release</h4>
-						<h5>d. vaughn autobiography</h5>
+						<h5 class="accent_subtitle">d. vaughn autobiography</h5>
 						<p>
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quod, modi esse quos minima incidunt, quasi ad dolorem id reiciendis at?
 						</p>
@@ -223,18 +223,9 @@ export default {
 					font-family: $serif;
 					font-size: 1.6rem;
 				}
-				h5 {
-					color: $accent;
-					text-transform: uppercase;
-					font-family: $sans-serif;
-					margin-block: 20px;
-					font-size: .9rem;
-					font-weight: 600;
-				}
 				p {
 					color: $primary-color;
 					font-family: $sans-serif;
-					line-height: 1.7;
 					font-size: .9rem;
 				}
 			}
