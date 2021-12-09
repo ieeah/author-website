@@ -15,15 +15,22 @@
 	// btns
 	.btn {
 		border-radius: 8px;
-		padding: 18px 25px;
+		padding: 10px 25px;
 		text-align: center;
 		text-transform: capitalize;
 		color: $clear-color;
 		font-family: $sans-serif;
+		width: fit-content;
+		font-size: .8em;
+		cursor: pointer;
+		transition: all .1s ease-in;
 	}
 
 	.btn.third {
 		background-color: $third-color;
+		&:hover {
+			background-color: $third-hover;
+		}
 	}
 
 	.btn.accent {

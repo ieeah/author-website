@@ -1,38 +1,53 @@
 <template>
 	<div class="head">
-		<img :src="require('@/assets/img/hero-07-2x.jpg')" alt="">
-		<img class="brand" :src="require('@/assets/img/author-logo-round.png')" alt="">
-		<div class="head_content">
-			<nav>
-				<ul class="main_nav">
-					<li v-for="link in mainNavLinks" :key="`${link.text}_link`">
-						<a :href="`${link.url}`">
-							{{link.text}}
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<i class="fas fa-shopping-cart"></i>
-						</a>
-					</li>
-				</ul>
-		</nav>
-		<div class="hero_text">
-			<h1 class="hand">Damon Vaughn</h1>
-			<h2>Best-selling author and the most influential public intellectual in the western world right now.</h2>
-			<p class="quote">- The New York times</p>
-			<div class="slide_btns">
-				<div class="arrow">
-					<i class="fas fa-arrow-left"></i>
-				</div>
-				<div class="arrow">
-					<i class="fas fa-arrow-right"></i>
+		<div class="hero">
+			<img :src="require('@/assets/img/hero-07-2x.jpg')" alt="">
+			<img class="brand" :src="require('@/assets/img/author-logo-round.png')" alt="">
+			<div class="hero_content">
+				<nav>
+					<ul class="main_nav">
+						<li v-for="link in mainNavLinks" :key="`${link.text}_link`">
+							<a :href="`${link.url}`">
+								{{link.text}}
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="fas fa-shopping-cart"></i>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="hero_text">
+					<h1 class="hand">Damon Vaughn</h1>
+					<h2>Best-selling author and the most influential public intellectual in the western world right now.</h2>
+					<p class="quote">- The New York times</p>
+					<div class="slide_btns">
+						<div class="arrow">
+							<i class="fas fa-arrow-left"></i>
+						</div>
+						<div class="arrow">
+							<i class="fas fa-arrow-right"></i>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="more_about"></div>
-		</div>
+		<section id="about">
+			<div class="container md">
+				<h2 class="hand">
+					More About Damon Vaughn
+				</h2>
+				<p>
+					Damon Vaughn is a professor of psychology at the University of Toronto, a clinical Psychologist and the author of the multi-million copy bestseller "The story of my life."
+				</p>
+				<div class="btn third">
+					Meet The Author
+				</div>
+			</div>
+		</section>
 	</div>
+	
 </template>
 
 <script>
@@ -78,7 +93,7 @@ export default {
 <style scoped lang="scss">
 @import '@/styles/globals.scss';
 
-.head {
+.hero {
 	position: relative;
 	&::before {
 		content: '';
@@ -100,7 +115,7 @@ export default {
 		left: 145px;
 		top: 2px;
 	}
-	.head_content {
+	.hero_content {
 		@include absoluteTopLeft;
 		@include full100;
 		display: flex;
@@ -147,10 +162,36 @@ export default {
 					padding: 18px;
 					background-color: $primary-color;
 					margin-left: 2px;
+					cursor: pointer;
+					&:hover {
+						background-color: rgba($color: $primary-color, $alpha: .2);
+					}
 				}
 			}
 		}
 	}
+}
+#about {
+	padding-block: 80px;
+	.container.md {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		h2 {
+			color: $accent; 
+		}
+		p {
+			color: $primary-color;
+			font-family: $sans-serif;
+			text-align: center;
+			font-size: 1.5rem;
+			margin-block: 10px 40px;
+		}
+		.btn {
+			font-weight: bold;
+		}
+	}
+	
 }
 
 
