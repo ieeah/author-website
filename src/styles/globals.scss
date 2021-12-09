@@ -16,3 +16,17 @@
 
 
 // typography
+* {
+	color: $clear-color;
+}
+
+// links
+a {
+	color: $clear-color;
+	text-decoration: none;
+	font-family: $sans-serif;
+}
+
+li {
+	display: inline-block;
+}
