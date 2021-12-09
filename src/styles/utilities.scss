@@ -2,27 +2,45 @@
 
 // utilities
 	// containers
-.container {
-	margin: auto;
-	
-}
+	.container {
+		margin-inline: auto;
+	}
+	.container.sm {
+		width: 55%;
+	}
+	.container.md {
+		width: 70%;
+	}
+
 	// btns
-.btn {
-	border-radius: 8px;
-	padding: 18px 25px;
-	text-align: center;
-	text-transform: capitalize;
-	color: $clear-color;
-	font-family: $sans-serif;
-}
+	.btn {
+		border-radius: 8px;
+		padding: 18px 25px;
+		text-align: center;
+		text-transform: capitalize;
+		color: $clear-color;
+		font-family: $sans-serif;
+	}
 
-.btn.third {
-	background-color: $third-color;
-}
+	.btn.third {
+		background-color: $third-color;
+	}
 
-.btn.accent {
-	background-color: $accent;
-}
+	.btn.accent {
+		background-color: $accent;
+	}
+
+	// typography
+
+	.hand {
+	font-family: $hand;
+	font-size: 4em;
+	}
+	.quote {
+		color: $secondary-clear;
+		font-style: italic;
+		font-family: $sans-serif;
+	}
 
 
 // mixins

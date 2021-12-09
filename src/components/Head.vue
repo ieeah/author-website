@@ -1,6 +1,7 @@
 <template>
 	<div class="head">
 		<img :src="require('@/assets/img/hero-07-2x.jpg')" alt="">
+		<img class="brand" :src="require('@/assets/img/author-logo-round.png')" alt="">
 		<div class="head_content">
 			<nav>
 				<ul class="main_nav">
@@ -16,7 +17,19 @@
 					</li>
 				</ul>
 		</nav>
-		<div class="hero"></div>
+		<div class="hero_text">
+			<h1 class="hand">Damon Vaughn</h1>
+			<h2>Best-selling author and the most influential public intellectual in the western world right now.</h2>
+			<p class="quote">- The New York times</p>
+			<div class="slide_btns">
+				<div class="arrow">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="arrow">
+					<i class="fas fa-arrow-right"></i>
+				</div>
+			</div>
+		</div>
 		<div class="more_about"></div>
 		</div>
 	</div>
@@ -70,7 +83,7 @@ export default {
 	&::before {
 		content: '';
 		background: rgb(0,0,0);
-		background: linear-gradient(0deg, rgba(0,0,0,.8) 20%, rgba(0,0,0,0) 100%);
+		background: linear-gradient(0deg, rgba(0,0,0,.8) 20%, rgba(0,0,0,0.2) 100%);
 		@include full100;
 		@include absoluteTopLeft;
 	}
@@ -80,14 +93,23 @@ export default {
 	object-position: center;
 	object-fit: cover;
 	}
+	img.brand {
+		width: 190px;
+		height: 190px;
+		position: absolute;
+		left: 145px;
+		top: 2px;
+	}
 	.head_content {
 		@include absoluteTopLeft;
 		@include full100;
+		display: flex;
+		align-items: center;
 		.main_nav {
 			@include absoluteTopRight;
-			padding-right: 150px;
+			padding-right: 145px;
 			li {
-			margin-inline: 20px;
+			margin-left: 40px;
 			padding-top: 40px;
 			border-top: 4px solid transparent;
 				&:hover {
@@ -100,6 +122,31 @@ export default {
 				a {
 				font-weight: bold;
 				font-size: .9rem;
+				}
+			}
+		}
+		.hero_text {
+			padding-left: 240px;
+			padding-top: 50px;
+			h1 {
+				color: $accent;
+			}
+			h2 {
+				font-size: 3em;
+				width: 50%;
+				line-height: 1.5;
+			}
+			.quote {
+				font-size: 1.35em;
+				margin-top: 30px;
+			}
+			.slide_btns {
+				margin-top: 40px;
+				display: flex;
+				.arrow {
+					padding: 18px;
+					background-color: $primary-color;
+					margin-left: 2px;
 				}
 			}
 		}

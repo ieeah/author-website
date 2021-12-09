@@ -1,6 +1,7 @@
 // colors
 $primary-color: #030303;
 $secondary-color: #86888e;
+$secondary-clear: #a3a3a3;
 $third-color: #65bc7b;
 $clear-color: white;
 
@@ -8,10 +9,10 @@ $accent: #f3b329;
 $accent-2: #49a987;
 
 // typography
-@import url('https://fonts.googleapis.com/css2?family=Allison&family=DM+Serif+Text&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Montserrat&family=Shadows+Into+Light&display=swap');
 $sans-serif: 'Montserrat', sans-serif;
 $serif: 'DM Serif Text', serif;
-$hand: 'Allison', cursive;
+$hand: 'Shadows Into Light', cursive;
 
 
 // backgrounds
