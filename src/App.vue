@@ -7,6 +7,7 @@
 			<Audiobook />
 			<Critics />
 			<Events />
+			<Newsletter />
 		</main>
 		<footer>
 
@@ -19,6 +20,7 @@ import Head from '@/components/Head.vue';
 import Audiobook from '@/components/Audiobook.vue';
 import Critics from '@/components/Critics.vue';
 import Events from '@/components/Events.vue';
+import Newsletter from '@/components/Newsletter.vue';
 export default {
 	name: 'App',
 	components: {
@@ -26,7 +28,7 @@ export default {
 		Audiobook,
 		Critics,
 		Events,
-
+		Newsletter,
 	}
 }
 </script>

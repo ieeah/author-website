@@ -28,10 +28,15 @@ export default {
 	margin-inline: 25px;
 	margin-bottom: 20px;
 	background-color: $clear-color;
+	cursor: pointer;
+	&:hover .head img {
+		filter: opacity(.9) contrast(70%);
+	}
 	.head {
 		img {
 			width: 100%;
 			object-fit: cover;
+			transition: all .1s ease-out;
 		}
 	}
 	.body {
