@@ -2,7 +2,7 @@
 	<div class="head">
 		<div class="container md">
 			<div class="left">
-				<h2 class="primary">{{title}}</h2>
+				<h2 class="primary section_heading">{{title}}</h2>
 				<h3 class="third subtitle">{{subTitle}}</h3>
 			</div>
 			<div class="right">
@@ -29,9 +29,6 @@ export default {
 	justify-content: space-between;
 	padding-block: 40px 20px;
 	.left {
-		h2 {
-			font-size: 2.5rem;
-		}
 		h3 {
 			font-size: 1rem;
 		}

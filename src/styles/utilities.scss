@@ -11,6 +11,9 @@
 	.container.md {
 		width: 75%;
 	}
+	.container.lg {
+		width: 85%;
+	}
 
 	// btns
 	.btn {
@@ -46,13 +49,12 @@
 	.hand {
 	font-family: $hand;
 	}
-
 	.quote {
 		color: $secondary-clear;
 		font-style: italic;
 		font-family: $sans-serif;
 	}
-
+	// colors
 	.accent {
 		color: $accent;
 	}
@@ -71,7 +73,10 @@
 	.secondary_dark {
 		color: $secondary-dark;
 	}
-
+	// weights
+	.fw500 {
+		font-weight: 500;
+	}
 	.subtitle {
 		text-transform: uppercase;
 		font-family: $sans-serif;
@@ -84,6 +89,12 @@
 	.subheading {
 		font-family: $sans-serif;
 		margin-bottom: 20px;
+	}
+
+	//cards
+	.rounded_bt_right{
+		border-bottom-right-radius: 10%;
+		overflow: hidden;
 	}
 
 
@@ -109,7 +120,10 @@
 	display: flex;
 	flex-wrap: nowrap;
 }
-
+@mixin flexColumn {
+	display: flex;
+	flex-direction: column;
+}
 @mixin flexAlignCenter {
 	display: flex;
 	align-items: center;

@@ -2,12 +2,12 @@
 	<div class="card critic">
 		<div class="body">
 			<h4 class="title primary">{{title}}</h4>
-			<p class="subheading secondary_dark">{{text}}</p>
+			<p class="subheading secondary_dark fw500">{{text}}</p>
 		</div>
 		<div class="author">
 			<img :src="img" alt="">
 			<span class="author secondary_dark">{{author}}</span>
-			<span class="magazine primary">{{magazine}}</span>
+			<span class="magazine primary fw500">{{magazine}}</span>
 		</div>
 	</div>
 </template>
@@ -29,6 +29,9 @@ export default {
 @import '@/styles/globals.scss';
 .card.critic {
 	margin-bottom: 45px;
+	&:last-of-type {
+		margin-bottom: 0;
+	}
 	.body {
 		background-color: $bg-2;
 		text-align: center;
@@ -50,9 +53,6 @@ export default {
 			font-size: 1.8rem;
 			margin-bottom: 15px;
 		}
-		p {
-			font-weight: 500;
-		}
 	}
 	.author {
 		@include flexAlignCenter;
@@ -66,9 +66,6 @@ export default {
 			font-size: 1.1rem;
 			font-weight: 600;
 			margin-right: 10px;
-		}
-		span.magazine {
-			font-weight: 500;
 		}
 	}
 }

@@ -6,7 +6,11 @@
 		<main>
 			<Audiobook />
 			<Critics />
+			<Events />
 		</main>
+		<footer>
+
+		</footer>
 	</div>
 </template>
 
@@ -14,12 +18,15 @@
 import Head from '@/components/Head.vue';
 import Audiobook from '@/components/Audiobook.vue';
 import Critics from '@/components/Critics.vue';
+import Events from '@/components/Events.vue';
 export default {
 	name: 'App',
 	components: {
 		Head,
 		Audiobook,
 		Critics,
+		Events,
+
 	}
 }
 </script>

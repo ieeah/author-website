@@ -1,5 +1,5 @@
 <template>
-	<section>
+	<section id="testimonials">
 		<SectionHead :title="critics.title" :subTitle="critics.subTitle"/>
 		<div class="container md">
 			<div class="critics">
@@ -85,24 +85,13 @@ export default {
 @import '@/styles/globals.scss';
 .critics {
 	@include flexNoWrap;
-	margin-bottom: 200px;
+	margin-bottom: 100px;
 }
 .left {
 	width: 58%;
 	height: 100%;
 	background-size: cover;
-	position: relative;
-	border-bottom-right-radius: 10%;
-	overflow: hidden;
-	&::before {
-		content: '';
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		@include absoluteTopLeft;
-		background: rgb(0,0,0);
-		background: linear-gradient(0deg, rgba(0,0,0,.6) 10%, rgba(0,0,0,0.2) 60%);
-	}
+	
 }
 
 .right {

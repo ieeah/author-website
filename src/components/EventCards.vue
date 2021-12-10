@@ -1,0 +1,47 @@
+<template>
+	<div class="eventCard">
+		<div class="head">
+			<img :src="cover" alt="">
+		</div>
+		<div class="body">
+			<h4 class="primary event_heading fw500">{{title}}</h4>
+			<p class="subheading secondary_dark container lg fw500">{{text}}</p>
+		</div>
+	</div>
+</template>
+
+<script>
+export default {
+	name: 'EventCard',
+	props: {
+		cover: String,
+		title: String,
+		text: String,
+	},
+}
+</script>
+
+<style scoped lang="scss">
+@import '@/styles/globals.scss';
+.eventCard {
+	width: calc(100% / 3);
+	margin-inline: 25px;
+	margin-bottom: 20px;
+	background-color: $clear-color;
+	.head {
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	.body {
+		text-align: center;
+		height: 235px;
+		h4 {
+			font-family: $sans-serif;
+			font-size: 1.5rem;
+			margin-block: 40px 30px;
+		}
+	}
+}
+</style>

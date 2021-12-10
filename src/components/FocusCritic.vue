@@ -1,14 +1,13 @@
 <template>
-	<div class="focus critic">
+	<div class="focus critic rounded_bt_right">
 		<img :src="img" :alt="`${title}`">
-		<!-- <img :src="require('@/assets/img/testimonial2-2x.jpg')" alt=""> -->
 		<div class="content">
 			<h3>{{title}}</h3>
 			<h4>{{subTitle}}</h4>
-			<p>
+			<p class="fw500">
 				{{textOne}}
 			</p>
-			<p>
+			<p class="fw500">
 				{{textTwo}}
 			</p>
 			<div class="critic_author">
@@ -38,6 +37,18 @@ export default {
 
 <style scoped lang="scss">
 @import '@/styles/globals.scss';
+.focus.critic {
+	position: relative;
+	&::before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		@include absoluteTopLeft;
+		background: rgb(0,0,0);
+		background: linear-gradient(0deg, rgba(0,0,0,.6) 10%, rgba(0,0,0,0.2) 60%);
+	}
+}
 img {
 	width: 100%;
 	height: 750px;
@@ -48,16 +59,16 @@ img {
 	@include absoluteTopLeft;
 	padding: 120px 100px;
 	h3 {
-		padding-bottom: 30px;
+		padding-bottom: 40px;
 		margin-bottom: 30px;
-		border-bottom: 1px solid $clear-color;
+		border-bottom: 1px solid rgba($color: $clear-color, $alpha: .4);
+		transform: translateY(-20px);
 	}
 	h4 {
 		font-family: $sans-serif;
 		margin-bottom: 30px;
 	}
 	p {
-		font-weight: 500;
 		margin-bottom: 30px;
 	}
 	p:last-of-type {
