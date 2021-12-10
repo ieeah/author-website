@@ -22,6 +22,7 @@ export default {
 .newsletter {
 	background-image: url('../assets/NewsletterHero/banner-2.jpg');
 	@include bgImage;
+	background-position-y: 16%;
 	@include flexColumn;
 	align-items: center;
 	text-align: center;
@@ -36,7 +37,6 @@ export default {
 	.form {
 		margin-bottom: 40px;
 		@include flexAlignCenter;
-		background-position: top;
 		input,
 		.btn {
 			@include flexAlignCenter;
@@ -49,7 +49,9 @@ export default {
 			margin-right: 20px;
 			width: 300px;
 			&:focus,
-
+			&:hover {
+				outline: none;
+			}
 			&::placeholder {
 				font-size: 1.1rem;
 			}
