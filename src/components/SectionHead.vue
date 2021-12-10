@@ -27,7 +27,7 @@ export default {
 .container.md {
 	@include flexAlignCenter;
 	justify-content: space-between;
-	padding-block: 40px;
+	padding-block: 40px 20px;
 	.left {
 		h2 {
 			font-size: 2.5rem;

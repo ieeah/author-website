@@ -220,7 +220,6 @@ export default {
 					font-size: 1.6rem;
 				}
 				p {
-					font-family: $sans-serif;
 					font-size: .9rem;
 				}
 			}
@@ -311,7 +310,6 @@ export default {
 		flex-direction: column;
 		align-items: center;
 		p {
-			font-family: $sans-serif;
 			text-align: center;
 			font-size: 1.5rem;
 			margin-block: 10px 40px;

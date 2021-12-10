@@ -62,9 +62,6 @@ export default {
 			.audiobook_banner_text {
 				text-align: center;
 				padding: 40px;
-				h2 {
-					font-size: 3rem;
-				}
 				h5 {
 					font-size: 1rem;
 					margin-bottom: 40px;
