@@ -66,14 +66,14 @@ export default {
 					text: 'Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellis. Vivamus suscipit tortor eget felis portitor voluptat. Nulla quis lorem ut libero malesuada feug at.',
 					img: require('@/assets/CriticCards/theguardian-xsmall.png'),
 					author: 'Gerald Hendley,',
-					magazine: '` The Guardian`',
+					magazine: 'The Guardian',
 				},
 				{
 					title: 'A Unique View On The World',
 					text: 'Sed justo mauris, elementum vestibulum porta et, auctor vel metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque in felis quis urna tempor laoreet. Duis porta viverra urna, eget iaculis mi vehicula quis.',
 					img: require('@/assets/CriticCards/globe-xsmall.png'),
 					author: 'Mary Maxey,',
-					magazine: '` The Globe And Mail`',
+					magazine: 'The Globe And Mail',
 				},
 			],
 		};
@@ -84,7 +84,7 @@ export default {
 <style scoped lang="scss">
 @import '@/styles/globals.scss';
 .critics {
-	@include flexAlignCenter;
+	@include flexNoWrap;
 	margin-bottom: 200px;
 }
 .left {
@@ -107,5 +107,6 @@ export default {
 
 .right {
 	width: 42%;
+	padding-left: 80px;
 }
 </style>

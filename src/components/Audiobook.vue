@@ -14,7 +14,7 @@
 				<div class="audiobook_banner_text">
 					<h2>New Audiobook</h2>
 					<h5 class="accent subtitle">no time to read? no problem. listen to it</h5>
-					<p class="subheading">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque doloremque ullam blanditiis at labore!</p>
+					<p class="subheading secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque doloremque ullam blanditiis at labore!</p>
 					<div class="audiobook_banner_platforms">
 						<img :src="require('@/assets/audiobookHero/audible-logo.png')" alt="">
 						<img :src="require('@/assets/audiobookHero/bn-logo-tall.png')" alt="">

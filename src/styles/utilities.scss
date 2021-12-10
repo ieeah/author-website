@@ -65,9 +65,11 @@
 	.primary {
 		color: $primary-color;
 	}
-
 	.secondary {
 		color: $secondary-color;
+	}
+	.secondary_dark {
+		color: $secondary-dark;
 	}
 
 	.subtitle {
@@ -80,7 +82,6 @@
 	}
 
 	.subheading {
-		color: $secondary-clear;
 		font-family: $sans-serif;
 		margin-bottom: 20px;
 	}
@@ -102,6 +103,11 @@
 	position: absolute;
 	top: 0;
 	right: 0;
+}
+
+@mixin flexNoWrap {
+	display: flex;
+	flex-wrap: nowrap;
 }
 
 @mixin flexAlignCenter {
