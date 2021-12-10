@@ -49,12 +49,15 @@ export default {
 @import '@/styles/globals.scss';
 #meetups {
 	@include flexColumn;
-	padding-block: 50px;
+	padding-block: 60px;
 	background-color: $bg-2;
 	.heading {
 		text-align: center;
 		width: 100%;
 		margin-bottom: 50px;
+		h5 {
+			font-size: 1rem;
+		}
 	}
 	.events {
 		@include flexNoWrap;

@@ -46,9 +46,7 @@ export default {
 	}
 	.hero {
 		background-image: url('../assets/audiobookHero/banner.jpg');
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
+		@include bgImage;
 		.container.sm {
 			@include flexAlignCenter;
 			padding-top: 70px;

@@ -36,11 +36,14 @@ export default {
 	}
 	.body {
 		text-align: center;
-		height: 235px;
 		h4 {
 			font-family: $sans-serif;
 			font-size: 1.5rem;
 			margin-block: 40px 30px;
+		}
+		p {
+			border-top: 1px solid rgba($color: $primary-color, $alpha: .2);
+			padding-top: 20px;
 		}
 	}
 }
