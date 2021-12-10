@@ -34,7 +34,7 @@
 				<div class="buy_amz">
 					<img :src="require('@/assets/img/book-widget.png')" alt="">
 					<div class="buy_txt">
-						<h4>Latest Book Release</h4>
+						<h4 class="primary">Latest Book Release</h4>
 						<h5 class="accent subtitle">d. vaughn autobiography</h5>
 						<p class="primary">
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quod, modi esse quos minima incidunt, quasi ad dolorem id reiciendis at?

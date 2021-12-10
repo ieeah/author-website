@@ -2,11 +2,11 @@
 	<div id="app">
 		<header>
 			<Head />
-			<main>
-				<Audiobook />
-				<Critics />
-			</main>
 		</header>
+		<main>
+			<Audiobook />
+			<Critics />
+		</main>
 	</div>
 </template>
 

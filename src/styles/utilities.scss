@@ -45,7 +45,6 @@
 
 	.hand {
 	font-family: $hand;
-	font-size: 4em;
 	}
 
 	.quote {
@@ -66,7 +65,10 @@
 	.primary {
 		color: $primary-color;
 	}
-	//headings styles
+
+	.secondary {
+		color: $secondary-color;
+	}
 
 	.subtitle {
 		text-transform: uppercase;
