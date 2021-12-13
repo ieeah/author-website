@@ -1,6 +1,6 @@
 <template>
 	<section id="testimonials">
-		<SectionHead :title="critics.title" :subTitle="critics.subTitle"/>
+		<SectionHead :title="critics.title" :subTitle="critics.subTitle" :btnText="critics.btnText"/>
 		<div class="container md">
 			<div class="critics">
 				<div class="left">
@@ -47,6 +47,7 @@ export default {
 			critics: {
 				title: 'What The Critics Say',
 				subTitle: 'testimonials from around the world',
+				btnText: 'Read All Testimonials',
 			},
 			focusCriticCard: [
 				{

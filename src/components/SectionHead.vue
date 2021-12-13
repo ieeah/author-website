@@ -6,7 +6,7 @@
 				<h3 class="third subtitle">{{subTitle}}</h3>
 			</div>
 			<div class="right">
-				<div class="btn accent_bg"> Read all testimonials</div>
+				<div class="btn accent_bg">{{btnText}}</div>
 			</div>
 		</div>
 	</div>
@@ -18,6 +18,7 @@ export default {
 	props: {
 		title: String,
 		subTitle: String,
+		btnText: String,
 	},
 }
 </script>
@@ -32,6 +33,9 @@ export default {
 		h3 {
 			font-size: 1rem;
 		}
+	}
+	.right .btn {
+		width: 235px;
 	}
 }
 

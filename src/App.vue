@@ -9,6 +9,7 @@
 			<Events />
 			<Newsletter />
 			<DigDeeper />
+			<Blog />
 		</main>
 		<footer>
 
@@ -23,6 +24,7 @@ import Critics from '@/components/Critics.vue';
 import Events from '@/components/Events.vue';
 import Newsletter from '@/components/Newsletter.vue';
 import DigDeeper from '@/components/DigDeeper.vue';
+import Blog from '@/components/Blog.vue';
 export default {
 	name: 'App',
 	components: {
@@ -32,6 +34,7 @@ export default {
 		Events,
 		Newsletter,
 		DigDeeper,
+		Blog,
 	},
 }
 </script>
