@@ -5,7 +5,7 @@
 			<h5 class="subtitle third">find out more about the author himself</h5>
 		</div>
 		<div class="deeper_articles">
-			<DeeperCard 
+			<DeeperCard
 				class="card rounded_bt_right"
 				v-for="(card, i) in deeperCards" :key="`card_${i}`"
 				:img="deeperCards[i].img"

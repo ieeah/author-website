@@ -1,6 +1,7 @@
 <template>
 	<div id="blog">
 		<SectionHead 
+			class="container md"
 			:title="heading.title"
 			:subTitle="heading.subTitle"
 			:btnText="heading.btnText"
@@ -11,7 +12,13 @@
 					
 				</div>
 				<div class="right">
-					
+					<Article
+						v-for="(article, i) in articles" :key="`article_${i}`"
+						:img="articles[i].img"
+						:title="articles[i].title"
+						:date="articles[i].date"
+						:comments="articles[i].comments"
+					/>
 				</div>
 			</div>
 		</div>
@@ -20,10 +27,12 @@
 
 <script>
 import SectionHead from '@/components/SectionHead.vue';
+import Article from '@/components/Article.vue';
 export default {
 	name: 'Blog',
 	components: {
 		SectionHead,
+		Article,
 	},
 	data() {
 		return {
@@ -32,27 +41,33 @@ export default {
 				subTitle: 'read the latest entries',
 				btnText: 'All Articles',
 			},
-			articles: [
-				{	
+			focusArticle: {	
 					img: require('@/assets/blog/blog_1.jpg'),
 					title: '20 Creativity Tips',
 					author: 'admin',
 					date: 'October 24th, 2019',
 					cats: ['Event', 'Tips & Tricks'],
-				},
+					text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim, mi at viverra bibendum, lacus erat vulputate quam, non lobortis ex erat quis nibh. Mauris.',
+					comments: 0,
+			},
+			articles: [
 				{	
-					img: require('@/assets/blog/blog_1.jpg'),
-					title: 'Whats\'s On Your Booklist?',
+					img: require('@/assets/blog/blog_2.jpg'),
+					title: 'What\'s On Your Booklist?',
 					author: 'admin',
 					date: 'October 19th, 2019',
 					cats: ['Reading'],
+					text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim, mi at viverra bibendum, lacus erat vulputate quam, non lobortis ex erat quis nibh. Mauris.',
+					comments: 0,
 				},
 				{	
-					img: require('@/assets/blog/blog_1.jpg'),
+					img: require('@/assets/blog/blog_3.jpg'),
 					title: 'Istanbul Travel guide',
 					author: 'admin',
 					date: 'October 16th, 2019',
 					cats: ['Travel', 'Guides'],
+					text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim, mi at viverra bibendum, lacus erat vulputate quam, non lobortis ex erat quis nibh. Mauris.',
+					comments: 0,
 				},
 			],
 		};
@@ -70,14 +85,24 @@ export default {
 	@include flexNoWrap;
 	margin-bottom: 100px;
 	}
+
 	.left {
-		width: 58%;
-		height: 100%;
+		width: 65%;
+		Article {
+			padding: 50px;
+			height: 100%;
+		}
 	}
 
 	.right {
-		width: 42%;
-		padding-left: 80px;
+		width: 35%;
+		padding-left: 50px;
+		Article {
+			padding: 35px;
+			img {
+				margin-bottom: 35px;
+			}
+		}
 	}
 }
 </style>

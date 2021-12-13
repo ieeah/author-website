@@ -1,18 +1,23 @@
 <template>
 	<section id="testimonials">
-		<SectionHead :title="critics.title" :subTitle="critics.subTitle" :btnText="critics.btnText"/>
+		<SectionHead 
+			class="container md"
+			:title="critics.title"
+			:subTitle="critics.subTitle"
+			:btnText="critics.btnText"
+		/>
 		<div class="container md">
 			<div class="critics">
 				<div class="left">
 					<FocusCritic
-						:img="focusCriticCard[0].img"
-						:title="focusCriticCard[0].title"
-						:subTitle="focusCriticCard[0].subTitle"
-						:textOne="focusCriticCard[0].textOne"
-						:textTwo="focusCriticCard[0].textTwo"
-						:logo="focusCriticCard[0].logo"
-						:author="focusCriticCard[0].author"
-						:magazine="focusCriticCard[0].magazine"
+						:img="focusCriticCard.img"
+						:title="focusCriticCard.title"
+						:subTitle="focusCriticCard.subTitle"
+						:textOne="focusCriticCard.textOne"
+						:textTwo="focusCriticCard.textTwo"
+						:logo="focusCriticCard.logo"
+						:author="focusCriticCard.author"
+						:magazine="focusCriticCard.magazine"
 					/>
 					
 				</div>
@@ -49,7 +54,7 @@ export default {
 				subTitle: 'testimonials from around the world',
 				btnText: 'Read All Testimonials',
 			},
-			focusCriticCard: [
+			focusCriticCard: 
 				{
 					img: require('@/assets/CriticCards/testimonial2-2x.jpg'),
 					title: 'Best Author Of His Generation',
@@ -60,7 +65,6 @@ export default {
 					author: '`Justine Kilpatrick, `',
 					magazine: 'The New York Times',
 				},
-			],
 			cards: [
 				{
 					title: 'A True Masterpiece, Bravo!',
@@ -90,9 +94,7 @@ export default {
 }
 .left {
 	width: 58%;
-	height: 100%;
 	background-size: cover;
-	
 }
 
 .right {

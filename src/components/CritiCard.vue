@@ -35,7 +35,7 @@ export default {
 	.body {
 		background-color: $bg-2;
 		text-align: center;
-		padding: 55px;
+		padding: 50px;
 		margin-bottom: 15px;
 		position: relative;
 		&::after {

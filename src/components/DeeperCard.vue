@@ -25,8 +25,7 @@ export default {
 
 .deeper_card {
 	--margin: 25px;
-	margin-inline: var(--margin);
-	width: calc((100% - (var(--margin) * 6)) / 3);
+	width: calc((100% - 100px) / 3);
 	height: 512px;
 	background-color: red;
 	position: relative;
@@ -46,7 +45,7 @@ export default {
 		@include flexColumn;
 		align-items: center;
 		@include full100;
-		padding-top: 87.5%;
+		padding-top: 90%;
 		background: rgb(0,0,0);
 		background: linear-gradient(0deg, rgba(0,0,0,.6) 10%, rgba(0,0,0,0.2) 60%);
 		h3 {
