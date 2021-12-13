@@ -1,7 +1,7 @@
 <template>
 	<div class="head">
 		<div class="hero">
-			<img :src="require('@/assets/img/hero-07-2x.jpg')" alt="">
+			<img :src="require('@/assets/HeadHero/hero-07-2x.jpg')" alt="">
 			<img class="brand" :src="require('@/assets/img/author-logo-round.png')" alt="">
 			<div class="hero_content">
 				<nav>

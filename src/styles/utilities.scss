@@ -91,8 +91,17 @@
 		margin-bottom: 20px;
 	}
 
+	.three_cards_heading {
+		text-align: center;
+		width: 100%;
+		margin-bottom: 50px;
+		h5 {
+			font-size: 1rem;
+		}
+	}
+
 	//cards
-	.rounded_bt_right{
+	.rounded_bt_right {
 		border-bottom-right-radius: 10%;
 		overflow: hidden;
 	}
@@ -128,6 +137,10 @@
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
+}
+@mixin flexBetween {
+	display: flex;
+	justify-content: space-between;
 }
 
 @mixin flexCentered {
