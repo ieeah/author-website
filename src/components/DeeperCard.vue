@@ -24,8 +24,9 @@ export default {
 @import '@/styles/globals.scss';
 
 .deeper_card {
-	width: calc((100% - 150px) / 3);
-	margin-inline: 25px;
+	--margin: 25px;
+	margin-inline: var(--margin);
+	width: calc((100% - (var(--margin) * 6)) / 3);
 	height: 512px;
 	background-color: red;
 	position: relative;
