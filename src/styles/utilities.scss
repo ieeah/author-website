@@ -141,6 +141,7 @@
 @mixin flexBetween {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 @mixin flexCentered {
