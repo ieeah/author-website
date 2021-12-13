@@ -56,7 +56,7 @@ export default {
 					title: '20 Creativity Tips',
 					author: 'admin',
 					date: 'October 24th, 2019',
-					cats: ['Event', 'Tips & Tricks'],
+					cats: ['Event,', 'Tips & Tricks'],
 					text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim, mi at viverra bibendum, lacus erat vulputate quam, non lobortis ex erat quis nibh. Mauris.',
 			},
 			articles: [
@@ -91,6 +91,7 @@ export default {
 
 	Article {
 		background-color: $clear-color;
+		cursor: pointer;
 	}
 	.left {
 		width: 65%;

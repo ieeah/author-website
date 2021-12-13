@@ -55,11 +55,11 @@ img {
 			font-family: $sans-serif;
 			font-size: 1.6rem;
 			font-weight: 500;
-			margin-bottom: 15px;
+			margin-bottom: 10px;
 		}
 		.details span {
 			font-family: $sans-serif;
-			font-size: .85rem;
+			font-size: .75rem;
 		}
 		.text {
 			margin-top: 15px;

@@ -12,7 +12,7 @@
 			<Blog />
 		</main>
 		<footer>
-
+			
 		</footer>
 	</div>
 </template>
