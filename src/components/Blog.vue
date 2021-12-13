@@ -9,7 +9,15 @@
 		<div class="container md">
 			<div class="articles">
 				<div class="left">
-					
+					<FocusArticle	
+						:img="focusArticle.img"
+						:title="focusArticle.title"
+						:author="focusArticle.author"
+						:date="focusArticle.date"
+						:cats="focusArticle.cats"
+						:text="focusArticle.text"
+						:comments="focusArticle.comments"
+					/>
 				</div>
 				<div class="right">
 					<Article
@@ -28,11 +36,13 @@
 <script>
 import SectionHead from '@/components/SectionHead.vue';
 import Article from '@/components/Article.vue';
+import FocusArticle from '@/components/FocusArticle.vue';
 export default {
 	name: 'Blog',
 	components: {
 		SectionHead,
 		Article,
+		FocusArticle,
 	},
 	data() {
 		return {
@@ -48,25 +58,18 @@ export default {
 					date: 'October 24th, 2019',
 					cats: ['Event', 'Tips & Tricks'],
 					text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim, mi at viverra bibendum, lacus erat vulputate quam, non lobortis ex erat quis nibh. Mauris.',
-					comments: 0,
 			},
 			articles: [
 				{	
 					img: require('@/assets/blog/blog_2.jpg'),
 					title: 'What\'s On Your Booklist?',
-					author: 'admin',
 					date: 'October 19th, 2019',
-					cats: ['Reading'],
-					text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim, mi at viverra bibendum, lacus erat vulputate quam, non lobortis ex erat quis nibh. Mauris.',
 					comments: 0,
 				},
 				{	
 					img: require('@/assets/blog/blog_3.jpg'),
 					title: 'Istanbul Travel guide',
-					author: 'admin',
 					date: 'October 16th, 2019',
-					cats: ['Travel', 'Guides'],
-					text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim, mi at viverra bibendum, lacus erat vulputate quam, non lobortis ex erat quis nibh. Mauris.',
 					comments: 0,
 				},
 			],
@@ -79,13 +82,16 @@ export default {
 @import '@/styles/globals.scss';
 
 #blog {
-	padding-block: 60px;
+	padding-block: 40px;
 	background-color: $bg-2;
 	.articles {
 	@include flexNoWrap;
 	margin-bottom: 100px;
 	}
 
+	Article {
+		background-color: $clear-color;
+	}
 	.left {
 		width: 65%;
 		Article {

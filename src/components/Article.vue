@@ -30,7 +30,7 @@ export default {
 @import '@/styles/globals.scss';
 
 article {
-	background-color: $clear-color;
+	height: 50%;
 	img {
 		display: block;
 		width: 100%;
