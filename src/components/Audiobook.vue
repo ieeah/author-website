@@ -1,5 +1,6 @@
 <template>
 	<section class="audiobooks">
+		<!-- all the platform banner -->
 		<div class="platforms">
 			<div class="container sm">
 				<img :src="require('@/assets/audiobookHero/ebay-logotan-2x-200x66.png')" alt="ebay logo">
@@ -8,6 +9,7 @@
 				<img :src="require('@/assets/audiobookHero/bb-logotan-2x-200x66.png')" alt="barnes and noble logo">
 			</div>
 		</div>
+		<!-- the image and logos banner -->
 		<div class="hero">
 			<div class="container sm">
 				<img :src="require('@/assets/audiobookHero/audible-app-2x-600x628.png')" alt="smartphone applications to listen my audiobook">

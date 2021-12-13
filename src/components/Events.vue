@@ -1,9 +1,11 @@
 <template>
 	<div id="meetups">
+		<!-- section heading -->
 		<div class="three_cards_heading">
 			<h2 class="section_heading primary">Upcoming Events</h2>
 			<h5 class="subtitle accent">Meet the author in person</h5>
 		</div>
+		<!-- the events are displayed in cards -->
 		<div class="events container lg">
 			<EventCards v-for="(event, i) in events" :key="`Event_0${i+1}`"
 				:cover="events[i].cover"

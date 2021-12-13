@@ -1,5 +1,6 @@
 <template>
 	<section id="testimonials">
+		<!-- section heading -->
 		<SectionHead 
 			class="container md"
 			:title="critics.title"
@@ -7,6 +8,7 @@
 			:btnText="critics.btnText"
 		/>
 		<div class="container md">
+			<!-- the container is flex displayed and contain the two sections with main and secondary elements -->
 			<div class="critics">
 				<div class="left">
 					<FocusCritic

@@ -1,14 +1,20 @@
 <template>
 	<div class="footer">
+		<!-- the footer is displayed as a flex-column parent -->
 		<div class="top_footer">
+			<!-- the author logo, absolute positioned -->
 			<img :src="require('@/assets/img/author-logo-round.png')" alt="author logo" class="brand">
 			<div class="container md">
+				<!-- first of three columns displayed in a flex container -->
 				<div class="column">
 					<h3 class="col_title">{{col1[0]}}</h3>
+					<!-- description -->
 					<p class="clear demi_opac">{{col1[1]}}</p>
 				</div>
+				<!-- column 2 -->
 				<div class="column">
 					<h3 class="col_title">{{col2Title}}</h3>
+					<!-- a v-for rendered list -->
 					<ul class="list_two">
 						<li v-for="(link, i) in col2" :key="`link_${i}`"
 							class="fw500"
@@ -18,8 +24,10 @@
 						</li>
 					</ul>
 				</div>
+				<!-- column three -->
 				<div class="column">
 					<h3 class="col_title">{{col3Title}}</h3>
+					<!-- contacts links -->
 					<ul class="list_three">
 						<li v-for="(link, i) in col3" :key="`link_${i}`">
 							<p class="demi_opac">{{link}}</p>
@@ -173,6 +181,10 @@ export default {
 				}
 			}
 
+			.list_three p {
+				display: inline;
+				margin-right: 5px;
+			}
 			.list_three i {
 				margin-right: 20px;
 				font-size: 1.25em;

@@ -1,5 +1,6 @@
 <template>
 	<div id="blog">
+		<!-- section heading components -->
 		<SectionHead 
 			class="container md"
 			:title="heading.title"
@@ -7,6 +8,7 @@
 			:btnText="heading.btnText"
 		/>
 		<div class="container md">
+			<!-- as the critics section, this is a flex displayed container with two children sections, showing main and secondary elements -->
 			<div class="articles">
 				<div class="left">
 					<FocusArticle	

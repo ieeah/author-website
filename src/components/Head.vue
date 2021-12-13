@@ -1,8 +1,11 @@
 <template>
 	<div class="head">
 		<div class="hero">
+			<!-- image used as background of the hero banner -->
 			<img :src="require('@/assets/HeadHero/hero-07-2x.jpg')" alt="a picture of the author">
+			<!-- logo placed with absolute -->
 			<img class="brand" :src="require('@/assets/img/author-logo-round.png')" alt="author logo">
+			<!-- alll the text and content of the header -->
 			<div class="hero_content">
 				<nav>
 					<ul class="main_nav">
@@ -18,6 +21,7 @@
 						</li>
 					</ul>
 				</nav>
+				<!-- main text on the header -->
 				<div class="hero_text">
 					<h1 class="hand accent">Damon Vaughn</h1>
 					<h2>Best-selling author and the most influential public intellectual in the western world right now.</h2>
@@ -31,6 +35,7 @@
 						</div>
 					</div>
 				</div>
+				<!-- the amazon section placed with absolute -->
 				<div class="buy_amz">
 					<img :src="require('@/assets/img/book-widget.png')" alt="ebook available">
 					<div class="buy_txt">
@@ -40,6 +45,7 @@
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quod, modi esse quos minima incidunt, quasi ad dolorem id reiciendis at?
 						</p>
 					</div>
+					<!-- the two, amazon and appstore cta btns -->
 					<div class="cta_amz">
 						<div class="amz_btn primary">
 							<i class="fab fa-amazon primary"></i>
@@ -50,6 +56,7 @@
 							Buy On AppStore
 						</div>
 					</div>
+					<!-- a div containing both the square amazon cta btns -->
 					<div class="square_amz_btns">
 						<a href="/demos" class="square_amz">
 							<i class="fas fa-folder"></i>
@@ -66,6 +73,7 @@
 				</div>
 			</div>
 		</div>
+		<!-- little intro to the author -->
 		<section id="about">
 			<div class="container md">
 				<h2 class="hand accent">
