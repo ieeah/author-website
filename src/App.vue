@@ -12,7 +12,7 @@
 			<Blog />
 		</main>
 		<footer>
-			
+			<Footer />
 		</footer>
 	</div>
 </template>
@@ -25,6 +25,7 @@ import Events from '@/components/Events.vue';
 import Newsletter from '@/components/Newsletter.vue';
 import DigDeeper from '@/components/DigDeeper.vue';
 import Blog from '@/components/Blog.vue';
+import Footer from '@/components/Footer.vue';
 export default {
 	name: 'App',
 	components: {
@@ -35,6 +36,7 @@ export default {
 		Newsletter,
 		DigDeeper,
 		Blog,
+		Footer,
 	},
 }
 </script>
