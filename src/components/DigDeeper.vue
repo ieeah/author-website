@@ -54,7 +54,7 @@ export default {
 @import '@/styles/globals.scss';
 
 #dig_deeper {
-	padding-block: 60px;
+	padding-block: 60px 120px;
 	.deeper_articles {
 		@include flexBetween;
 	}
