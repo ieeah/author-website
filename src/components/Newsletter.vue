@@ -4,7 +4,7 @@
 		<h5 class="accent subtitle">be notified about book signing tour dates</h5>
 		<div class="form">
 			<input type="text" class="primary fw500" placeholder="Insert your email...*">
-			<div class="btn third_bg">Subscribe</div>
+			<a href="/sub_newsletter" class="btn third_bg">Subscribe</a>
 		</div>
 		<p class="subheading secondary fw500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque doloremque ullam blanditiis at labore!
 		</p>

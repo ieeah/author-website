@@ -1,7 +1,7 @@
 <template>
 	<div class="eventCard">
 		<div class="head">
-			<img :src="cover" alt="">
+			<img :src="cover" :alt="title">
 		</div>
 		<div class="body">
 			<h4 class="primary event_heading fw500">{{title}}</h4>

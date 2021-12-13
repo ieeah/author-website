@@ -1,8 +1,8 @@
 <template>
 	<div class="head">
 		<div class="hero">
-			<img :src="require('@/assets/HeadHero/hero-07-2x.jpg')" alt="">
-			<img class="brand" :src="require('@/assets/img/author-logo-round.png')" alt="">
+			<img :src="require('@/assets/HeadHero/hero-07-2x.jpg')" alt="a picture of the author">
+			<img class="brand" :src="require('@/assets/img/author-logo-round.png')" alt="author logo">
 			<div class="hero_content">
 				<nav>
 					<ul class="main_nav">
@@ -32,7 +32,7 @@
 					</div>
 				</div>
 				<div class="buy_amz">
-					<img :src="require('@/assets/img/book-widget.png')" alt="">
+					<img :src="require('@/assets/img/book-widget.png')" alt="ebook available">
 					<div class="buy_txt">
 						<h4 class="primary">Latest Book Release</h4>
 						<h5 class="accent subtitle">d. vaughn autobiography</h5>

@@ -5,7 +5,7 @@
 			<p class="subheading secondary_dark fw500">{{text}}</p>
 		</div>
 		<div class="author">
-			<img :src="img" alt="">
+			<img :src="img" :alt="`${magazine} logo`">
 			<span class="author secondary_dark">{{author}}</span>
 			<span class="magazine primary fw500">{{magazine}}</span>
 		</div>
@@ -35,7 +35,7 @@ export default {
 	.body {
 		background-color: $bg-2;
 		text-align: center;
-		padding: 50px;
+		padding: 45px;
 		margin-bottom: 15px;
 		position: relative;
 		&::after {

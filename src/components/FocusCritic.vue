@@ -11,7 +11,7 @@
 				{{textTwo}}
 			</p>
 			<div class="critic_author">
-				<img :src="logo" alt="">
+				<img :src="logo" :alt="`${magazine} logo`">
 				<h4>{{author}}</h4>
 				<h4 class="third">{{magazine}}</h4>
 			</div>

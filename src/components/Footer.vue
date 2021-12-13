@@ -1,7 +1,7 @@
 <template>
 	<div class="footer">
 		<div class="top_footer">
-			<img :src="require('@/assets/img/author-logo-round.png')" alt="" class="brand">
+			<img :src="require('@/assets/img/author-logo-round.png')" alt="author logo" class="brand">
 			<div class="container md">
 				<div class="column">
 					<h3 class="col_title">{{col1[0]}}</h3>
